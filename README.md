@@ -42,8 +42,6 @@ npm install
 npm start
 The app will be available at http://localhost:3000.
 
-**Screenshots**
-
 
 📌 Future Enhancements
 Integrate Firebase for backend and authentication
