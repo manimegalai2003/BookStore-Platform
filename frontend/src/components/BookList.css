@@ -1,0 +1,103 @@
+/* BookList.css */
+
+/* General container for the bookstore */
+.bookstore-container {
+    font-family: Georgia, sans-serif;
+    padding: 20px;
+    background-image: url('https://t4.ftcdn.net/jpg/01/46/40/35/360_F_146403506_381OxD624hppWMQcIbjLuSr8TCW1q2lj.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: fit; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    text-align: center;
+    position: relative; /* Allow absolute positioning of cart */
+}
+
+/* Style for the book list */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style for each book item */
+.book-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 220px; /* Increased width to provide space for buttons */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Style for book images */
+.book-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover effect for book items */
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the buttons */
+.add-to-cart-btn, .buy-btn {
+    background-color: #cb0cbb;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%; /* Make buttons take full width of the container */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.add-to-cart-btn:hover, .buy-btn:hover {
+    background-color: #cb0cbb;
+}
+
+/* Filter section style */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Positioning the logo in the top-left corner */
+.bookstore-container .logo {
+    position: absolute;
+    top: 10px; /* Adjust top as needed */
+    left: 20px; /* Adjust left as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+/* Style for the cart summary in the top right corner */
+.cart-summary {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    margin: 0;
+}
+
+.cart-summary p {
+    margin: 5px 0;
+}
